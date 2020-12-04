@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: rgb(16, 16, 212);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 5px;
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+}
+
+.round{
+    border: 10px solid black;
+    border-radius: 50%;
+    height: 50vw;
+    width: 50vw;
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.centerDot{
+    height: 5vw;
+    width: 5vw;
+    background-color: black;
+    border-radius: 50%;
+    transform-origin: bottom;
+    position: absolute;
+    top: 42%;
+}
+
+.secondHand{
+    border: 3px solid red;
+    border-radius: 9px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    width: 0.1vw;
+    height: 23vw;
+    background-color: red;
+    transform-origin: bottom;
+
+}
+
+.minuteHand{
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-radius: 9px;
+    border: 4px solid rgb(47, 0, 255);
+    width: 0.3vw;
+    height: 20vw;
+    background-color: rgb(47, 0, 255);
+    top: 50%;
+    transform-origin: bottom;
+}
+
+.hourHand{
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-radius: 9px ;
+    width: 0.3vw;
+    height: 17vw;
+    border: 5px solid black;
+    background-color: black;
+    transform-origin: bottom;
+}
